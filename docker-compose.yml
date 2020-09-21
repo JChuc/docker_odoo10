@@ -8,10 +8,10 @@ services:
     ports:
       - "8069:8069"
     links:
-      #enlace a otro servicio como las base de datos
+      #Enlace a otro servicio como la base de datos o servidores web
       - db
     volumes:
-      #para agregar otros módulos al Odoo
+      #Para agregar otros módulos al Odoo
       - ./extra-addons:/mnt/extra-addons
   db:
     #Colocamos la version de Postgresql a trabajar con el Odoo dependiendo de la version.
