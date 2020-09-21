@@ -1,15 +1,20 @@
 version: '2'
 services:
   odoo:
+    # Colocamos la imagen de la version de Odoo a usar 9,10,11,12,13
     image: odoo:10
     restart: always
+    #Puerto: Puerto local : Puerto del contenedor o de la aplicacion
     ports:
       - "8069:8069"
     links:
+      #enlace a otro servicio como las base de datos
       - db
     volumes:
+      #para agregar otros módulos al Odoo
       - ./extra-addons:/mnt/extra-addons
   db:
+    #Colocamos la version de Postgresql a trabajar con el Odoo dependiendo de la version.
     image: postgres:9.5
     restart: always
     environment:
