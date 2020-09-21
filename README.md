@@ -1,4 +1,4 @@
-# dockers_odoo10
+# docker_odoo10
 
 Para Ejecutar Odoo 10 necesitamos 2 Contenedores:
 1) La aplicación Odoo 10
