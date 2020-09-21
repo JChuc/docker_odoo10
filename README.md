@@ -7,8 +7,7 @@ Para Ejecutar Odoo 10 necesitamos 2 Contenedores:
 
 Para levantar estos servicios utilizaremos docker-compose, generamos el documento donde estara la configuracion detallada de cada unos de los servicios con su respectiva imagen.
 
-docker_odoo10
-  ---docker_compose.yml
+  docker_compose.yml
 
 Ejecutamos el comando
   docker-compose up -d
